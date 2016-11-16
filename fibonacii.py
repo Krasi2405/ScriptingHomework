@@ -39,7 +39,6 @@ print(fibonacci_recursion(10))
 
 print("Time to calculate 5000th fibonacci number: ")
 now = datetime.datetime.now()
-fibonacci_list_2 = []
 for x in fibonacci_generator(5000):
     pass
 print("Generator: {}".format(datetime.datetime.now() - now))
@@ -47,3 +46,12 @@ print("Generator: {}".format(datetime.datetime.now() - now))
 now = datetime.datetime.now()
 fibonacci_recursion(5000)
 print("Recursion: {}".format(datetime.datetime.now() - now))
+
+n = int(input("Which fibonacci number would you like to get?"))
+now = datetime.datetime.now()
+a_list_2 = []
+for x in fibonacci_generator(n):
+    a_list_2.append(x)
+print()
+print("{}th fibonacci number: {}".format(n, a_list_2[n - 1]))
+print(datetime.datetime.now() - now)
