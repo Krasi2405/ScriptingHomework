@@ -55,3 +55,4 @@ for x in fibonacci_generator(n):
 print()
 print("{}th fibonacci number: {}".format(n, a_list_2[n - 1]))
 print(datetime.datetime.now() - now)
+print(sys.maxsize)
